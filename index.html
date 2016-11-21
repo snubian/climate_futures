@@ -1,0 +1,209 @@
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<style>
+
+/* wrapper for heading */
+div#heading_wrapper {
+	margin-top: 60px;
+}
+
+/* wrapper for menu */
+div#nav_wrapper {
+	width: 610px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/* menu items */
+div.nav_menu_item {
+	/* width and height should match background image */
+	width: 290px;
+	height: 190px;
+	margin-bottom: 10px;
+	background-color: #e6e6e6;
+	text-align: center;
+	border: 1px solid;
+	padding: 5px;
+}
+
+/* background images for each menu item;
+   border colours are optional and can be toggled on/off by un/commenting line below */
+div#nav_01 { background-image: url('images/backgrounds/resized/bg01_bw.jpg'); border-color: #888844; }
+div#nav_02 { background-image: url('images/backgrounds/resized/bg02_bw.jpg'); border-color: #4d94ff; }
+div#nav_03 { background-image: url('images/backgrounds/resized/bg03_bw.jpg'); border-color: #ff9980; }
+div#nav_04 { background-image: url('images/backgrounds/resized/bg04_bw.jpg'); border-color: #e6ac00; }
+
+/* toggle this to avoid using coloured borders above */
+div[id^="nav_0"] { border-color: #CCCCCC !important; }
+
+/* all text in menu items */
+div.nav_menu_item p, p.page_heading, p.page_blurb {
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 1px 1px #eee;
+	text-align: center;
+	color: #000000;
+}
+
+/* page heading specific */
+p.page_heading {
+	font-size: 36px;
+}
+
+/* page blurb specific */
+p.page_blurb {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18x;
+	margin-bottom: 50px;
+}
+
+/* menu item heading specific */
+div.nav_menu_item p.nav_heading {
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* menu item description specific */
+div.nav_menu_item p.nav_description {
+	margin-top: 12px;
+	font-size: 16px;
+}
+
+/* image attribution text */
+div.image_attribution {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;		
+	color: #CCCCCC;
+	margin-top: 50px;
+}
+
+/* image attribution links */
+div.image_attribution a {
+	color: #999999;
+}
+
+/* icon */
+div.nav_menu_item img {
+	height: 55px;
+	opacity: 0.9;
+}
+
+/* logo */
+div.logos {
+	margin-top: 60px;
+	text-align: center;
+}
+
+div.logos img {
+	height: 55px;
+	opacity: 0.9;
+	margin: 0px 10px;
+}
+
+/* relative positioning of menu items */
+.nav_left { float: left; }
+.nav_right { margin-left: 310px; }
+
+/* link */
+a {
+	text-decoration: none;
+}
+
+/* **************************************************************************
+hover over menu item
+*/
+
+/* menu item hover */
+div.nav_menu_item:hover {
+	cursor: pointer;
+	border-color: #CCCCCC !important;
+}
+
+/* background images */
+div#nav_01:hover { background-image: url('images/backgrounds/resized/bg01.jpg'); }
+div#nav_02:hover { background-image: url('images/backgrounds/resized/bg02.jpg'); }
+div#nav_03:hover { background-image: url('images/backgrounds/resized/bg03.jpg'); }
+div#nav_04:hover { background-image: url('images/backgrounds/resized/bg04.jpg'); }
+
+/* text content, font etc. */
+div.nav_menu_item:hover p {
+	color: #FFFFFF;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+/* icon */
+div.nav_menu_item:hover img {
+	opacity: 1;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="heading_wrapper">
+	<p class="page_heading">BIODIVERSITY & CLIMATE CHANGE:<br>ONLINE TOOLS</p>
+</div>
+
+<div id="nav_wrapper">
+	<p class="page_blurb">
+	The Biodiversity Node of the NSW Adaptation Research Hub has developed a suite of web tools for users to access information on the impacts of climate change on biodiversity. These tools support the NSW state government and local governments in adaptation planning and impact assessments.
+	</p>
+
+	<a href="http://www.weedfutures.net">
+		<div class="nav_menu_item nav_left" id="nav_01">
+			<p class="nav_heading">WEED FUTURES</p>
+			<img src="images/icons/mimosa.png">
+			<p class="nav_description">Access maps on weed threats under climate change for over 500 invasive NSW plant species</p>
+		</div>
+	</a>
+	
+	<a href="http://www.nswthreatenedspecies.net">
+		<div class="nav_menu_item nav_right" id="nav_02">
+			<p class="nav_heading">THREATENED SPECIES</p>
+			<img src="images/icons/bat.png">
+			<p class="nav_description">Search metrics on the vulnerability of NSW threatened species in response to climate change</p>
+		</div>
+	</a>
+	
+	<a href="http://www.nswnichefinder.net">
+		<div class="nav_menu_item nav_left" id="nav_03">
+			<p class="nav_heading">NICHE FINDER</p>
+			<img src="images/icons/global-warming.png">
+			<p class="nav_description">Explore baseline maps of ecological ranges and access climate niche metrics of NSW plants</p>
+		</div>
+	</a>
+	
+	<a href="#">
+		<div class="nav_menu_item nav_right" id="nav_04">
+			<p class="nav_heading">CLIMATE REFUGIA</p>
+			<img src="images/icons/cone.png">
+			<p class="nav_description">Find areas of climate refuge in NSW and watch species' distributions move over time under different climate scenarios</p>
+		</div>
+	</a>
+
+	<div class="logos">
+		<a href="https://www.mq.edu.au/"><img src="images/logos/MQ_INT_HOR_RGB_POS.png"></a>
+		<a href="http://www.environment.nsw.gov.au/"><img src="images/logos/OEH2ColourWord.png"></a>
+	</div>
+
+	<div class="image_attribution">
+		<p>
+		Landscape/nature photography courtesy of <a href="https://500px.com/remkoduursma">Remko Duursma</a> and <a href="http://www.environment.nsw.gov.au/">OEH</a>
+		<br>
+		Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+		</p>
+	</div>
+
+</div>
+
+</body>
+
+</html>
